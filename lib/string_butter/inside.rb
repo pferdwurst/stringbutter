@@ -3,10 +3,8 @@ require 'pp'
 module StringButter
   class Inside < ::String
 
-    attr_accessor :internal_string
 
     STYLES = {
-      :"\/" => "0",
       :bold => "1",
       :underline => "4",
       :red => "31"
