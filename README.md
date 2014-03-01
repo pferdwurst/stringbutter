@@ -19,6 +19,43 @@ Or install it yourself as:
 ## Usage
 
    TODO:  Coming
+   
+   Creates formatted ASCII output.
+   Telescoping indentation
+   
+   
+   e.g.
+   
+   sb = StringButter.new
+   sb.p "1. This is the first line"
+   sb.p.bold "2. This is a bold second line "
+   sb.append "and this is on the same level as the previous line"
+   sb.p "3. Indentations"
+   sb.ind "a. This is indented"
+   sb.p "b. This is the same level of indentation"
+   sb.ind+ "i. This line is further indented."
+   sb.p "ii. Indent level remains the same"
+   sb.ind+("a) This line is even further indented"
+   sb.ind-("ii. Back to the the 2nd level"
+   sb.ind--("4. Back to the main level"
+   
+   
+   Colorizing/Styles:
+   
+   sb = StringButter.new
+   
+   sb.red "this is a red string"
+   sb.red.bold "This is a bold red string"
+   sb.append.italic "shhhhh"
+   sb.append "Don't tell anyone!"
+   
+   
+   
+   
+   
+   
+   
+   
 
 ## Contributing
 
